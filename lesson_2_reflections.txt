@@ -23,3 +23,7 @@ How can you use the staging area to make sure you have one commit per logical ch
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 	Branches could be used to try an experimental feature which might or might not work as intended. For example, in the Android Hangman/Snowman app I'm trying to build, I could experiment in a branch with the feature to remove the ads when a user subscribes to a newsletter. If that works in the end, I could probably merge it into master, or scrape it off and try another option. Or give up on implementing it in the requested way if I realize it isn't possible at all.
+
+How do the diagrams help you visualize the branch structure?
+
+	By presenting the brench structure in a visual way with diagrams? I mean, it's like asking how does a picture of an apple help you visualize what an apple looks like?
