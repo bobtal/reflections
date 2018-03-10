@@ -1,0 +1,63 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    I was looking only through the lines that have changed since the old version instead
+    of looking through the whole file.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    It would show me the steps how the file was built. Or I could use an earlier version of
+    the file as a template for a similar project
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    In manual commit, pros are that you decide when to commit meaning you can make
+    a commit be one logical change to a file. The cons are that sometimes you might
+    want to forget to commit, especially as a beginner used of git.
+    In auto commit, cons outweight the pros, as every commit is not going to contain
+    a logigal change, just random saves. This is a backup solution, not a VCS. The pros
+    are only that it can "save" you when you forget to do a commit, but even then it
+    won't be a logical change and could be somewhat misleading. You also can't add
+    a message to an auto commit, expect the timestamp, which isn't all that useful 
+    most of the time.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Multiple files are saved mostly when working with software projects because they
+    comprise of several files which are tightly related to each other. So the commit
+    is project based rather than file based. Single files are saved in Google Docs or
+    similar services because each file is mostly an independent unit and isn't 
+    related to other files, at least not in a way that project files are related
+    to each other.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log will show all commits for a certain repository each with an id, author, date
+    and a message. I can then use 
+    git diff earlier_commit_id later_commit_id 
+    to see the changes which were done moving from the earlier commit to the later commit
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Because I can always get back to a previous commit and track which commit
+    introduced the bug. Though I am not entirely sure what is the best option after the bug is located.
+    Most likely return to the latest commit and fix the bug there and move on, but maybe there
+    could be a solution to fix the bug at the "broken" commit and somehow delete the more
+    recent commits and move from there. That's feasible if there aren't really that many commits
+    between the "broken" one and the most recent one. But It'll cut down on unneeded clutter of
+    commits if we have one commit that introduces the bug, then another one to fix it with a few in between. 
+
+    Instead we could have one less commit in our git history (git log) if we could correct the bug at the point it was introduced then re-implement the same commits that were already done after the "broken" one
+    unless there are many and they introduced many new features and we don't want to rewrite all these.
+    If we could just edit that particular "broken" commit and have that update propagate to the top
+    of the stack of commits, it would probably be the best option. Thougn not sure if it's possible.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    For every serious project that is more than a few days of work or so.
