@@ -15,3 +15,7 @@ How is the staging area different from the working directory and the repository?
 	be committed in the next commit just so that they don't mix up with the previous one which probably
 	had an intended logical purpose. The next one could have a more generic message, like committing files
 	which were autoupdated/generated in the meantime but these updates shouldn't really impact the functionality added in the previous commit I assume.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	Add only the updated files which contain the logical change you want included in the commit to the staging area, so that when using git commit, only those files are part of the commit. The other updated files might be later added to the staging area and committed again if they are part of another separate logical change.
