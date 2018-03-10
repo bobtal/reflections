@@ -27,3 +27,7 @@ What are some situations when branches would be helpful in keeping your history 
 How do the diagrams help you visualize the branch structure?
 
 	By presenting the brench structure in a visual way with diagrams? I mean, it's like asking how does a picture of an apple help you visualize what an apple looks like?
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	Well, they result is that they merge... Not sure which diagram is the question refering to. But the branches being merged means that the separate "paths" in this asusmable diagram would "flatten" to a single path, so commits from both branches will be on the same "ptah", or branch, which most of the time is master. The commits will be ordered chronologically and will no longer present the parent child relstionship as in an branch which wasn't merged. Stil, we could see the difference between the commit and it's parent using the git show [child_commit_id] command.
