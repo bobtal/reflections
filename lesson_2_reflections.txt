@@ -31,3 +31,7 @@ How do the diagrams help you visualize the branch structure?
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
 	Well, they result is that they merge... Not sure which diagram is the question refering to. But the branches being merged means that the separate "paths" in this asusmable diagram would "flatten" to a single path, so commits from both branches will be on the same "ptah", or branch, which most of the time is master. The commits will be ordered chronologically and will no longer present the parent child relstionship as in an branch which wasn't merged. Stil, we could see the difference between the commit and it's parent using the git show [child_commit_id] command.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	I assume automatic merging means just resolving conflicts automatically when the conflicts are simple or not really conflicts. So the pros are that it happens automatically if different parts of the same file were updated in different branches, so it's easy to merge them into a new version of the file. I don't see a con really. Maybe if you want to see the changes in both branches, but guess that history is still kept after merging if a branch isn't deleted.
